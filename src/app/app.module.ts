@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WorldInfoComponent } from './components/world-info/world-info.component';
 import { WorldComponent } from './components/world/world.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { WorldComponent } from './components/world/world.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    NgbModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
