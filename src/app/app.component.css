@@ -11,11 +11,25 @@
 
 .right-column {
     flex: 1;
-    margin-left:auto;
 }
 
 footer {
     display:flex;
     justify-content:center;
+}
+
+.underline {
+    text-decoration:underline;
+    margin-right: 1px;
+}
+
+.source {
+    text-decoration: none;
+    color:aqua;
+}
+
+.source:hover {
+    color:red;
+    text-decoration:underline;
 }
 
