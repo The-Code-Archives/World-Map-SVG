@@ -25,12 +25,12 @@ export class WorldComponent {
     this.apiService.getCountryInformation(countryId).subscribe((info: any) => {
       let data = info[1][0]
       this.name.emit(data.name);
-      this.capital.emit(data.capital);
-      this.region.emit(data.region);
-      this.income.emit(data.income);
+      this.capital.emit(data.capitalCity);
+      this.region.emit(data.region.value);
+      this.income.emit(data.incomeLevel.value);
       this.latitude.emit(data.latitude);
       this.longitude.emit(data.longitude);
-      console.log(data);
+      console.log(data)
     });
   }
 
