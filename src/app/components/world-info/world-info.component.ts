@@ -1,5 +1,5 @@
-import { Component, OnInit, Input,Output, EventEmitter } from '@angular/core';
-import { WorldComponent } from '../world/world.component';
+import { Component, Input} from '@angular/core';
+
 
 @Component({
   selector: 'app-world-info',
